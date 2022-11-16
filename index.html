@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark and Light Mode</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Select the theme</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quae explicabo! Qui nobis, vitae tempora dolorem facilis ullam mollitia maxime? Soluta sapiente sed debitis repellat labore culpa accusantium assumenda iste.</p>
+    <input type="checkbox" onclick="darkmode()">
+    <script>
+        function darkmode(){
+            const t = document.body;
+            t.classList.toggle('dark');
+        }
+    </script>
+</body>
+</html>

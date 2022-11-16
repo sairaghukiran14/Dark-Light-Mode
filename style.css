@@ -1,0 +1,53 @@
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+        *{
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            
+            padding: 0;
+        }
+        body{
+            transition: all 0.5s ease-in-out;
+        }
+        h1{
+            display: flex;
+            justify-content: center;
+        }
+        p{
+            text-align: center;
+            padding: 15px;
+        }
+        input[type="checkbox"]{
+            margin-left: 47%;
+            position: relative;
+            appearance: none;
+            width: 52px;
+            height: 26px;
+            background-color: grey;
+            border-radius: 26px;
+            transition: all 0.5s ease-in-out;
+            cursor: pointer;
+            outline: none;
+        }
+        input[type="checkbox"]:checked{
+            background-color: rgb(66, 167, 225);
+            transition: all 0.5s ease-in-out;
+        }
+        input[type="checkbox"]:checked::before{
+            transform: translateX(25px);
+            transition: all 0.5s ease-in-out;
+        }
+        input[type="checkbox"]::before{
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: aliceblue;
+            border-radius: 50%;
+            top:3px;
+            left: 3px;
+            transition: all 0.5s ease-in-out;
+        }
+        .dark{
+            background-color: grey;
+            color: white;
+        }
